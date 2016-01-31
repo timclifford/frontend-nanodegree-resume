@@ -1,102 +1,111 @@
 <!DOCTYPE html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Tim Clifford - CV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tim Clifford - CV</title>
 
-  <link href="css/style.css" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Project JS files -->
-  <script src="js/jQuery.js"></script>
-  <script src="js/helper.js"></script>
-  
-  <!-- Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Project JS files -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/helper.js"></script>
 
-  <!-- Google Maps JS -->
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-  <!-- Fonts -->
-   <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <!-- Google Maps JS -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
-  <div class="container">
-    <nav role="navigation" class="navbar navbar-default" data-spy="affix" data-offset-top="10">
-        <div id="logo" class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle" id="main-menu">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand center-block" id="logo"><img src="images/tcdesign.png" alt="Tim Clifford"></a>
+    <div class="container">
+        <nav role="navigation" class="navbar navbar-default" data-spy="affix" data-offset-top="10">
+            <div id="logo" class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle" id="main-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand center-block" id="logo"><img src="images/tcdesign.png" alt="Tim Clifford">
+                </a>
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="menu-item"><a href="#workAnchor" class="menu-item">Work Experience</a>
+                    </li>
+                    <li class="menu-item"><a href="#projectsAnchor" class="menu-item">Projects</a>
+                    </li>
+                    <li class="menu-item"><a href="#educationAnchor" class="menu-item">Education</a>
+                    </li>
+                    <li class="menu-item"><a href="#locationAnchor" class="menu-item">Locations</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="main">
+            <div id="header" class="center-content clear-fix">
+                <ul id="topContacts" class="flex-box"></ul>
+            </div>
+            <div style="clear: both;"></div>
+            <div id="workExperience" class="gray">
+                <a name="workAnchor"></a>
+                <h2>Work Experience</h2>
+            </div>
+            <div id="projects">
+                <a name="projectsAnchor"></a>
+                <h2>Projects</h2>
+            </div>
+            <div id="education" class="gray">
+                <a name="educationAnchor"></a>
+                <h2>Education</h2>
+            </div>
+            <div id="mapDiv">
+                <a name="locationAnchor"></a>
+                <h2>Where I've Lived and Worked</h2>
+            </div>
+            <div id="lets-connect" class="dark-gray">
+                <h2 class="orange center-text">Let's Connect</h2>
+                <ul id="footerContacts" class="flex-box">
+                </ul>
+            </div>
         </div>
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="menu-item"><a href="#workAnchor" class="menu-item">Work Experience</a></li>
-                <li class="menu-item"><a href="#projectsAnchor" class="menu-item">Projects</a></li>
-                <li class="menu-item"><a href="#educationAnchor" class="menu-item">Education</a></li>
-                <li class="menu-item"><a href="#locationAnchor" class="menu-item">Locations</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div id="main">
-      <div id="header" class="center-content clear-fix">
-        <ul id="topContacts" class="flex-box"></ul>
-      </div>
-      <div style="clear: both;"></div>
-      <div id="workExperience" class="gray">
-        <a name="workAnchor"></a>
-        <h2>Work Experience</h2>
-      </div>
-      <div id="projects">
-        <a name="projectsAnchor"></a>
-        <h2>Projects</h2>
-      </div>
-      <div id="education" class="gray">
-        <a name="educationAnchor"></a>
-        <h2>Education</h2>
-      </div>
-      <div id="mapDiv">
-        <a name="locationAnchor"></a>
-        <h2>Where I've Lived and Worked</h2>
-      </div>
-      <div id="lets-connect" class="dark-gray">
-        <h2 class="orange center-text">Let's Connect</h2>
-          <ul id="footerContacts" class="flex-box">
-        </ul>
-      </div>
-    </div><!-- End #main -->
-  </div><!-- End .container -->
-  
-  <!-- Custom JS -->
-  <script src="js/resumeBuilder.js"></script>
+        <!-- End #main -->
+    </div>
+    <!-- End .container -->
 
-  <script type="text/javascript">
+    <!-- Custom JS -->
+    <script src="js/resumeBuilder.js"></script>
 
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
+    <script type="text/javascript">
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('topContacts').style.display = 'none';
+        }
+        if (document.getElementsByTagName('h1').length === 0) {
+            document.getElementById('header').style.display = 'none';
+        }
+        if (document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.display = 'none';
+        }
+        if (document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.display = 'none';
+        }
+        if (document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.display = 'none';
+        }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('lets-connect').style.display = 'none';
+        }
+        if (document.getElementById('map') === null) {
+            document.getElementById('mapDiv').style.display = 'none';
+        }
+    </script>
 </body>
+
 </html>

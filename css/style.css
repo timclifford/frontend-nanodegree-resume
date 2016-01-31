@@ -8,31 +8,36 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  padding:0;
-  margin:0;
+h6
+{
+  padding: 0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   color: black;
 }
 
-.clear-fix {
+.clear-fix
+{
   overflow: auto;
 }
 
 .education-entry,
 .work-entry,
-.project-entry {
+.project-entry
+{
   padding: 0 5%;
 }
 
-h1 {
+h1
+{
   font-size: 40px;
   color: #f5a623;
   line-height: 48px;
   display: inline;
 }
 
-h2 {
+h2
+{
   font-weight: bold;
   font-size: 24px;
   color: #999;
@@ -40,14 +45,16 @@ h2 {
   padding: 10px;
 }
 
-h3 {
+h3
+{
   font-style: italic;
   font-size: 20px;
   color: #000;
   line-height: 22px;
 }
 
-h4 {
+h4
+{
   font-weight: bold;
   font-size: 14px;
   color: #4a4a4a;
@@ -57,11 +64,13 @@ h4 {
 h2,
 h3,
 h4,
-h5 {
-  padding:10px 5%;
+h5
+{
+  padding: 10px 5%;
 }
 
-.date-text {
+.date-text
+{
   font-style: italic;
   font-size: 14px;
   color: #999;
@@ -69,73 +78,84 @@ h5 {
   float: left;
 }
 
-.location-text {
+.location-text
+{
   font-style: italic;
   font-size: 14px;
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
-p {
+p
+{
   font-size: 14px;
   color: #333;
   line-height: 21px;
 }
 
-a {
+a
+{
   color: #1199c3;
   text-decoration: none;
   margin-top: 10px;
   display: block;
 }
 
-.welcome-message {
+.welcome-message
+{
   font-style: italic;
   font-size: 18px;
   color: #f3f3f3;
   line-height: 28px;
-  margin:20px 0;
+  margin: 20px 0;
 }
 
-#skills-h3 {
+#skills-h3
+{
   color: #37bca1;
   display: none;
   font-size: 1.6em;
   font-weight: bold;
 }
 
-.orange {
+.orange
+{
   background-color: #37bca1;
 }
 
-.orange-text {
+.orange-text
+{
   color: #37bca1;
   font-weight: bold;
 }
 
-.white-text {
+.white-text
+{
   font-weight: bold;
   color: #fff;
 }
 
-.gray {
+.gray
+{
   background-color: #f3f3f3;
   padding-bottom: 10px;
-  clear:both;
+  clear: both;
 }
 
-.dark-gray {
+.dark-gray
+{
   background-color: #4a4a4a;
 }
 
 /* TODO: Replace with image later */
-#header {
+#header
+{
   background-color: inherit;
 }
 
-.flex-box {
+.flex-box
+{
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -144,128 +164,157 @@ a {
   padding: 10px;
 }
 
-.center-content {
+.center-content
+{
   padding: 2.5% 5%;
 }
 
-ul {
+ul
+{
   list-style-type: none;
 }
 
-.biopic {
+.biopic
+{
   float: left;
   padding: 20px;
   width: 200px;
   display: none;
 }
 
-img {
+img
+{
   padding: 10px;
 }
 
-span {
+span
+{
   padding: 5px;
 }
 
-#lets-connect {
+#lets-connect
+{
   text-align: center;
 }
 
 /* Custom CSS */
 
-#header {
+#header
+{
   background: #353535;
   border-radius: 5px;
 }
 
-h1#name {
+h1#name
+{
   color: white;
   font-weight: bold;
-
 }
 
-#header span {
-/*  font-style: italic;*/
+#header span
+{
+/*  font-style: italic;*/;
 }
 
-#logo .navbar-brand {
-    margin: auto 2em;
-    padding: 0;
-    align-items: center;
+#logo .navbar-brand
+{
+  margin: auto 2em;
+  padding: 0;
+  align-items: center;
 }
 
-#logo img {
-    margin: auto 0;
-    align-items: center;
-    border: none;
-    box-shadow: none;
+#logo img
+{
+  margin: auto 0;
+  align-items: center;
+  border: none;
+  box-shadow: none;
 }
 
-.affix {
-    top: 0;
-    max-width: 1140px;
-    width: 100%;
-    transition: 1s;
+.affix
+{
+  top: 0;
+  max-width: 1140px;
+  width: 100%;
+  transition: 1s;
 }
 
-.affix-top {
-    box-shadow: none;
+.affix-top
+{
+  box-shadow: none;
 }
 
-.education-entry {
-  margin:20px 0;
+.education-entry
+{
+  margin: 20px 0;
 }
 
-@media (min-width: 768px) {
-  #navbarCollapse .navbar-nav {
-      float: right;
-      margin: 0;
-  }
+@media (min-width: 768px)
+{
+  #navbarCollapse .navbar-nav
+  {
+    float: right;
+    margin: 0;
+  };
 }
 
 /* END custom */
 
 /* Media queries to handle various device widths */
 
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
+@media only screen and (max-width: 1024px)
+{
+  #lets-connect
+  {
     margin-top: 5%;
-  }
+  };
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
+@media only screen and (max-width:900px)
+{
+  .biopic
+  {
     width: 175px;
-  }
+  };
 }
 
-@media only screen and (max-width: 750px) {
-  #lets-connect {
+@media only screen and (max-width: 750px)
+{
+  #lets-connect
+  {
     margin-top: 10%;
   }
-  .biopic {
+
+  .biopic
+  {
     width: 150px;
   }
-  .welcome-message {
+
+  .welcome-message
+  {
     display: none;
-  }
+  };
 }
 
-#map {
+#map
+{
   display: block;
   height: 100%;
   margin: 0 5%;
 }
 
-#mapDiv {
+#mapDiv
+{
   height: 400px;
   width: 100%;
   padding-bottom: 5%;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 750px)
+{
   #skills-h3,
-  .biopic {
+  .biopic
+  {
     display: block;
-  }
+  };
 }

@@ -69,10 +69,9 @@ bio.display = function() {
 		formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
 		$("#skills").append(formattedSkill);
 	}
-}
+};
 
 // Education info.
-// 
 var education = {
 	"schools": [
 	  {
@@ -111,7 +110,7 @@ var education = {
 // Display education infomation to page.
 
 education.display = function() {
-	for (school in education.schools) {
+	for (var school in education.schools) {
 		// Adds <div class="education-entry"></div>.
         $("#education").append(HTMLschoolStart);
         var schoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
@@ -121,12 +120,12 @@ education.display = function() {
         var schoolDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
         var schoolURL = HTMLschoolName.replace("%data%", education.schools[school].url);
         $(".education-entry:last").append(schoolDates + schoolLocation + "<br>" + schoolName + schoolDegree + schoolMajor + "<br>" + schoolURL);
-    };
+    }
 
     // Appends <h3>Online Classes</h3>.
     $("#education").append(HTMLonlineClasses);
 
-    for (course in education.onlineCourses) {
+    for (var course in education.onlineCourses) {
         $("#education").append(HTMLschoolStart);
         var onlineCourseTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
         var onlineCourseUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
@@ -134,8 +133,8 @@ education.display = function() {
         var onlineCourseDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].date);
 
         $(".education-entry:last").append(onlineCourseDate + "<br>" + onlineCourseTitle + onlineCourseUrl + onlineCourseSchool);
-    };
-}
+    }
+};
 
 // Work Info.
 
@@ -161,7 +160,7 @@ var work = {
 // Add work data to the page.
 
 work.display = function() {
-	for (job in work.jobs) {
+	for (var job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 
 		// Concatenate work.jobs.employer and work.jobs.title
@@ -179,7 +178,7 @@ work.display = function() {
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 		$(".work-entry:last").append(formattedDescription);
 	}
-}
+};
 
 var projects = {
 	"projects": [
@@ -229,7 +228,7 @@ projects.display = function() {
 			}
 		}
 	}
-}
+};
 
 // Call display functions.
 bio.display();

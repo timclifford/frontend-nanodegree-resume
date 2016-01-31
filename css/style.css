@@ -12,6 +12,7 @@ h6 {
   padding:0;
   margin:0;
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 .clear-fix {
@@ -58,9 +59,7 @@ h3,
 h4,
 h5 {
   padding:10px 5%;
-
 }
-
 
 .date-text {
   font-style: italic;
@@ -97,19 +96,23 @@ a {
   font-size: 18px;
   color: #f3f3f3;
   line-height: 28px;
+  margin:20px 0;
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #37bca1;
   display: none;
+  font-size: 1.6em;
+  font-weight: bold;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #37bca1;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #37bca1;
+  font-weight: bold;
 }
 
 .white-text {
@@ -129,7 +132,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: inherit;
 }
 
 .flex-box {
@@ -151,7 +154,7 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
+  padding: 20px;
   width: 200px;
   display: none;
 }
@@ -167,6 +170,60 @@ span {
 #lets-connect {
   text-align: center;
 }
+
+/* Custom CSS */
+
+#header {
+  background: #353535;
+  border-radius: 5px;
+}
+
+h1#name {
+  color: white;
+  font-weight: bold;
+
+}
+
+#header span {
+/*  font-style: italic;*/
+}
+
+#logo .navbar-brand {
+    margin: auto 2em;
+    padding: 0;
+    align-items: center;
+}
+
+#logo img {
+    margin: auto 0;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+}
+
+.affix {
+    top: 0;
+    max-width: 1140px;
+    width: 100%;
+    transition: 1s;
+}
+
+.affix-top {
+    box-shadow: none;
+}
+
+.education-entry {
+  margin:20px 0;
+}
+
+@media (min-width: 768px) {
+  #navbarCollapse .navbar-nav {
+      float: right;
+      margin: 0;
+  }
+}
+
+/* END custom */
 
 /* Media queries to handle various device widths */
 
